@@ -49,7 +49,6 @@ let cor = 0;
 
 function quiz() {
     if(cnt%3== 0 && cor > 0 ) alert(`맞은 갯수는 ${cor}개 입니다!`);
-    if(cnt%3 ==0 && cor > 0 ) return;
     if(cnt > 0 && cor == 0 && cnt % 3 ==0) alert('재시험입니다! 확인을 누르세요!');
     let num = parseInt(Math.random() * 20 );
     let user =  prompt(`${problem[num]}`);
